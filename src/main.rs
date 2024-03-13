@@ -8,7 +8,7 @@ fn main() {
 
 mod a2Z{
     pub fn print_a2Z() {
-        for c in b'a'..=b'Z' {
+        for c in (b'Z'..=b'a').rev() {
             println!("{}", c as char);
         }
     }
